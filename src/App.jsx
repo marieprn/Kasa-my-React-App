@@ -1,16 +1,15 @@
-import { Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import NotFound from './pages/NotFound';
+import { Routes, Route } from "react-router-dom";
+import Banner from "./components/Banner.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import NotFound from "./pages/NotFound.jsx";
+import './styles/App.css';
 
-export default function App() {
+
+function App() {
   return (
     <div>
-      <nav style={{ marginBottom: '20px' }}>
-        <Link to="/" style={{ marginRight: '10px' }}>Accueil</Link>
-        <Link to="/about">À propos</Link>
-      </nav>
-
+      <Banner />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -19,3 +18,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
