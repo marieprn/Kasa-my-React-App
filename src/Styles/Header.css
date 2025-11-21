@@ -1,31 +1,31 @@
-.banner {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 45px 100px 50px;
 }
 
-.banner img {
+.header img {
     width: 210px;
     height: 68px;
 }
 
-.banner nav{
+.header nav{
     display: flex;
     gap: 57px;
 }
 
-.banner nav a {
+.header nav a {
     text-decoration: none;
     color: black;
     font-size: 24px;
     font-weight: 500;
 }
 
-.banner nav a:visited {
+.header nav a:visited {
     color: black;
 }
 
-.banner nav a.active-link {
+.header nav a.active-link {
     text-decoration: underline;
 }

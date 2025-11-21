@@ -1,5 +1,12 @@
+import BannerHome from "../components/BannerHome.jsx"; // adapte le chemin selon ton arborescence
+import Card from "../components/card.jsx";
 function Home() {
-  return <h1>Bienvenue sur la page d’accueil !</h1>;
+  return (
+    <div>
+      <BannerHome />
+      <Card/>
+    </div>
+  );
 }
 
 export default Home;

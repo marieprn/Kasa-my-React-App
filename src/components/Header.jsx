@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
-import "../Styles/banner.css";
+import "../Styles/Header.css";
 
-function Banner() {
+function Header() {
   return (
-    <div className="banner">
+    <div className="header">
         <img src={logo} alt="logo" />
         <nav>
             <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""}>
@@ -19,4 +19,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default Header;
