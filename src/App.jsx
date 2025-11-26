@@ -4,6 +4,7 @@ import Footer from "./components/Footer.jsx"
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import FicheLogement from "./pages/FicheLogement.jsx";
 import './styles/App.css';
 
 
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/logement/:id" element={<FicheLogement />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer/>
