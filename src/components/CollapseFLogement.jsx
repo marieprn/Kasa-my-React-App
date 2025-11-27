@@ -1,18 +1,22 @@
 import { useState } from "react";
-import "../Styles/CollapseFLogement.css";
+import { IoChevronUpSharp } from "react-icons/io5";
+import "../Styles/CollapseFLogement.scss";
 
-function Collapse({ title, content }) {
+function CollapseFLogement({ title, content }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="collapse">
-      <div className="collapse-header" onClick={() => setOpen(!open)}>
+    <div className="CollapseFLogement">
+      <div className="CollapseHeaderFLogement" onClick={() => setOpen(!open)}>
         <h3>{title}</h3>
-        <span className={open ? "arrow open" : "arrow"}>⌃</span>
+
+        <IoChevronUpSharp
+          className={`arrow ${open ? "rotate" : ""}`}
+        />
       </div>
 
       {open && (
-        <div className="collapse-content">
+        <div className="CollapseContentFLogement">
           {content}
         </div>
       )}
@@ -20,4 +24,4 @@ function Collapse({ title, content }) {
   );
 }
 
-export default Collapse;
+export default CollapseFLogement;

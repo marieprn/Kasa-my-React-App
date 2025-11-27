@@ -1,4 +1,4 @@
-import "../Styles/card.css";
+import "../Styles/card.scss";
 import data from "../data.json";
 import { Link } from "react-router-dom";
 

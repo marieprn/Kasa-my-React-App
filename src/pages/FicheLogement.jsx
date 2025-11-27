@@ -4,8 +4,8 @@ import Carrousel from "../components/CarrouselFLogement";
 import Tags from "../components/TagsFLogement";
 import RatingFLogement from "../components/RatingFLogement";
 import Host from "../components/HostFLogement";
-import Collapse from "../components/CollapseFLogement";
-import "../Styles/FicheLogement.css";
+import CollapseFLogement from "../components/CollapseFLogement";
+import "../Styles/FicheLogement.scss";
 
 function FicheLogement() {
   const { id } = useParams();
@@ -26,19 +26,19 @@ function FicheLogement() {
         <div className="FicheRight">
           <Host name={logement.host.name} picture={logement.host.picture} />
         </div>
-       
-        <div className="RatingFLogement">
-          <RatingFLogement rating={parseInt(logement.rating)} />
-        </div>
 
         <div className="Tags">
           <Tags tags={logement.tags} />
         </div>
+
+         <div className="RatingFLogement">
+          <RatingFLogement rating={parseInt(logement.rating)} />
+        </div>
       </div>
 
       <div className="FicheCollapses">
-        <Collapse title="Description" content={logement.description} />
-        <Collapse
+        <CollapseFLogement title="Description" content={logement.description} />
+        <CollapseFLogement
           title="Équipements"
           content={
             <ul>

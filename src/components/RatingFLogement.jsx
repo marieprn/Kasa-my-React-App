@@ -1,6 +1,6 @@
 import starGrey from "../assets/StarGrey.png";
 import starColor from "../assets/StarColor.png";
-import "../Styles/RatingFLogement.css";
+import "../Styles/RatingFLogement.scss";
 
 const RatingFLogement = ({ rating }) => {
  

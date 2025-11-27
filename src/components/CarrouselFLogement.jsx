@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
-import "../Styles/CarrouselFLogement.css";
+import "../Styles/CarrouselFLogement.scss";
 
 function Carrousel({ pictures }) {
   const [index, setIndex] = useState(0);

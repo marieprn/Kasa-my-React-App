@@ -1,5 +1,5 @@
 import ImgBannerAPropos from "../assets/BannerAPropos.png";
-import "../Styles/BannerAPropos.css";
+import "../Styles/BannerAPropos.scss";
 
 function BannerAPropos() {
   return (

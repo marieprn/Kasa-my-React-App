@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { Collapse } from "react-collapse";
 import { IoChevronUpSharp } from "react-icons/io5";
-import "../Styles/CollapseAPropos.css";
+import "../Styles/CollapseAPropos.scss";
 
 function CollapseAPropos({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="collapse">
+    <div className="Collapse">
       <button
-        className="collapse-header"
+        className="CollapseHeader"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span>{title}</span>
@@ -19,7 +19,7 @@ function CollapseAPropos({ title, children }) {
       </button>
 
       <Collapse isOpened={isOpen}>
-        <div className="collapse-content">
+        <div className="CollapseContent">
           {children}
         </div>
       </Collapse>

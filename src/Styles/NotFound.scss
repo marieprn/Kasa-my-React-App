@@ -1,26 +1,26 @@
 .not-found-container {
-    text-align: center;
-    margin-top: 89px;
-    margin-bottom: 139px;
-}
+  text-align: center;
+  margin-top: 89px;
+  margin-bottom: 139px;
 
-.not-found-title {
+  .not-found-title {
     font-size: 288px;
     color: #FF6060;
     margin-bottom: 139px;
-}
+  }
 
-.not-found-text {
+  .not-found-text {
     font-size: 36px;
     margin-bottom: 139px;
     color: #FF6060;
-}
+  }
 
-.not-found-link {
+  .not-found-link {
     font-size: 18px;
     color: #000000;
-}
 
-.not-found-link:hover {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

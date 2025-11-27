@@ -1,4 +1,4 @@
-import "../Styles/TagsFLogement.css";
+import "../Styles/TagsFLogement.scss";
 
 function Tags({ tags }) {
   return (
