@@ -7,7 +7,7 @@ function Card() {
     <div className="BackgroundCard">
       <div className="cards">
         {data.map((item) => (
-          <Link key={item.id} to={`/logement/${item.id}`}>
+          <Link className="CardLink" key={item.id} to={`/logement/${item.id}`}>
             <div
               className="card"
               style={{ backgroundImage: `url(${item.cover})` }}

@@ -16,3 +16,13 @@
         color: white;
     }
 }
+
+@media (max-width: 768px) {
+  .footer {
+    p {
+      max-width: 200px;   // ✔️ force le retour à la ligne
+      text-align: center; // ✔️ centré
+      line-height: 1.4;
+    }
+  }
+}

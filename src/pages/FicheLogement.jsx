@@ -6,12 +6,13 @@ import RatingFLogement from "../components/RatingFLogement";
 import Host from "../components/HostFLogement";
 import CollapseFLogement from "../components/CollapseFLogement";
 import "../Styles/FicheLogement.scss";
+import NotFound from "./NotFound";
 
 function FicheLogement() {
   const { id } = useParams();
   const logement = data.find((item) => item.id === id);
 
-  if (!logement) return <p>Logement introuvable 😢</p>;
+  if (!logement) return <NotFound />;
 
   return (
     <div className="fiche">

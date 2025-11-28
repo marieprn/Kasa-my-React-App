@@ -29,3 +29,22 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    margin: 20px; // marges réduites
+
+    img {
+      width: 145px;
+      height: auto; // pour garder les proportions
+    }
+
+    nav {
+      gap: 20px; // espacement réduit
+
+      a {
+        font-size: 16px; // texte plus petit
+      }
+    }
+  }
+}
