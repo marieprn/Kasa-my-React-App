@@ -1,33 +1,48 @@
-.CollapseFLogement {
-  width: 586px;
-
-  h3 {
-    margin: 0;
-  }
-
-  .CollapseHeaderFLogement {
-    background: #FF6060;
-    padding: 12px 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    font-weight: bold;
-    color: white;
-    font-size: 18px;
-    border-radius: 5px;
-  }
-
-  .CollapseContentFLogement {
-    margin-top: 15px;
-  }
-}
-
 .FicheCollapses {
   display: flex;
   gap: 76px;
   justify-content: center;
   margin: 0 100px 38px;
+  .CollapseFLogement {
+    width: 586px;
+    h3 {
+    margin: 0;
+    }
+    .CollapseHeaderFLogement {
+      background: #FF6060;
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      color: white;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+    .CollapseContentFLogement {
+      margin-top: 15px;
+    }
+  }
 }
+
+  @media (max-width: 768px) {
+    .FicheCollapses {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin: 0 auto 20px auto;
+      max-width: 335px;
+      width: 100%;
+      .CollapseFLogement{
+        width: 100%;
+        .CollapseHeaderFLogement{
+          font-size: 13px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+

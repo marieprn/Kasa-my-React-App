@@ -8,7 +8,7 @@
     margin: 0 100px 24px;
 
     .FicheLeft,
-    .FicheRight,
+    //.FicheRight,
     .RatingFLogement,
     .Tags {
       width: 48%;
@@ -47,10 +47,35 @@
       }
     }
   }
-
-  .FicheCollapses {
-    display: flex;
-    gap: 76px;
-    margin: 0 100px 50px;
-  }
 }
+
+  @media (max-width: 768px) {
+  .fiche {
+    .FicheHeader {
+      margin: 0 auto 20px auto;
+      max-width: 335px;
+      width: 100%;
+
+      .FicheLeft,
+      .Tags {
+        width: 100%;
+      }
+      
+      .FicheLeft {
+        text-align: left;
+        order: 1;
+        width: 100%;
+
+        h1 {
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+
+        p {
+          font-size: 14px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  }

@@ -14,3 +14,23 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .Tags {
+    flex-wrap: wrap;
+    gap: 10px;
+    order: 2;
+
+    .tags {
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        white-space: nowrap;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+}

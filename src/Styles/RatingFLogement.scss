@@ -4,3 +4,23 @@
     justify-content: flex-end;
     gap: 10px;
 }
+
+@media (max-width: 768px) {
+  .RatingFLogement {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    order: 3;
+
+    .rating {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+    }
+
+    .rating img {
+      width: 14px;
+    }
+  }
+}

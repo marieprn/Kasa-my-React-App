@@ -19,3 +19,21 @@
   }
 }
 
+@media (max-width: 768px) {
+  .FicheRight{
+    order: 4;
+    justify-content: flex-end;
+
+    .Host {
+      .HostPicture {
+        width: 32px;
+        height: 32px;
+      }
+
+      .HostName {
+        font-size: 12px;
+        text-align: right;
+      }
+    }
+  }
+}

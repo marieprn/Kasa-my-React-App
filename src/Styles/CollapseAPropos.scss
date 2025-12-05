@@ -32,3 +32,24 @@
     background: #F6F6F673;
   }
 }
+
+@media (max-width: 768px) {
+    .Collapse {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin: 0 auto 20px auto;
+      max-width: 335px;
+      width: 100%;
+        .CollapseHeader{
+          font-size: 13px;
+          padding: 10px;
+          .arrow{
+            width: 16px;
+            height: 10px;
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+  

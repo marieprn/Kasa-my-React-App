@@ -24,3 +24,20 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .not-found-container{
+    margin: 113px 0 139px;
+    .not-found-title{
+      font-size: 96px;
+    }
+    .not-found-text{
+      font-size: 18px;
+      margin: 0 58px 113px;
+      font-weight: 500;
+    }
+    .not-found-link{
+      font-size: 14px;
+    }
+  }
+  }
