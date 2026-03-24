@@ -5,7 +5,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import FicheLogement from "./pages/FicheLogement.jsx";
-import './styles/App.scss';
+import './Styles/App.scss';
 
 
 function App() {
